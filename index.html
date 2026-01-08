@@ -65,6 +65,15 @@
                 },
                 removeEventListener: () => {},
                 isViewable: () => true,
-                open: (url) => { window.open(url, '_blank'); }
+                open: (url) => { window.open(url, '_blank'); },
+                getMaxSize: () => ({ width: window.innerWidth, height: window.innerHeight }),
+                getCurrentPosition: () => ({ x: 0, y: 0, width: window.innerWidth, height: window.innerHeight }),
+                getDefaultPosition: () => ({ x: 0, y: 0, width: window.innerWidth, height: window.innerHeight }),
+                getScreenSize: () => ({ width: screen.width, height: screen.height }),
+                close: () => { console.log('MRAID close called'); },
+                expand: (url) => { console.log('MRAID expand called:', url); },
+                getExpandProperties: () => ({ width: window.innerWidth, height: window.innerHeight, useCustomClose: false }),
+                setExpandProperties: (props) => { console.log('MRAID setExpandProperties:', props); },
+                useCustomClose: (use) => { console.log('MRAID useCustomClose:', use); }
             };
         }</script></body></html>
