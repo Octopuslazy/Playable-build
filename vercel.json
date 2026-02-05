@@ -1,8 +1,7 @@
 {
-  "outputDirectory": ".",
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!Assets/).*)",
       "destination": "/index.html"
     }
   ],
