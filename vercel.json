@@ -1,9 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/((?!Assets/).*)",
-      "destination": "/index.html"
-    }
-  ],
-  "cleanUrls": true
-}
